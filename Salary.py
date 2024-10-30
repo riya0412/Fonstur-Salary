@@ -5,6 +5,7 @@ import plotly.express as px
 import numpy as np
 from datetime import datetime, timedelta
 from employee import employee_settings
+from Attendance import *
 import calendar
 
 # # Function to show employee details
@@ -204,6 +205,8 @@ def attendance():
     # Navigation logic
     if option == "Manual Attendance Entry":
         manual_attendance_entry()
+    elif option == "Attendance Excel Import":
+        Excel_attendance()
     elif option == "View Employee Details":
         show_salary_details()
     elif option == "Modify Employee":
