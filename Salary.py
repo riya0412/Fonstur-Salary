@@ -200,7 +200,7 @@ def show_salary_details():
 def attendance():
     # Sidebar for navigation
     st.sidebar.title("Employee Management System")
-    option = st.sidebar.selectbox("Choose an option", ["Manual Attendance Entry", "View Employee Details","Modify Employee"])
+    option = st.sidebar.selectbox("Choose an option", ["Manual Attendance Entry","Attendance Excel Import", "View Employee Details","Modify Employee"])
 
     # Navigation logic
     if option == "Manual Attendance Entry":
