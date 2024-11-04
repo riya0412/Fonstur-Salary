@@ -155,7 +155,7 @@ def employee_settings():
                     delete_employee(emp['ECode'])
 
     st.subheader("Add New Employee")
-    new_gender = st.selectbox("Gender", ["Male", "Female"], key="new_gender")
+    new_gender = st.selectbox("Gender", ["Male", "Female"], index=0, key="new_gender")
     new_pan_no = st.text_input("PAN No", key="new_pan_no")
     new_name = st.text_input("Name", key="new_name")
     new_area_of_work = st.text_input("Area of Work", key="new_area_of_work")
